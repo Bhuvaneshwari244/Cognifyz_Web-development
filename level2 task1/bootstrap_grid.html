@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Custom styling just to make the grid columns visible */
+        .custom-box {
+            background-color: #0d6efd; /* Blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Responsive Grid Layout (Bootstrap)</h2>
+        <p>Resize your browser window to see the grid change from 3 columns to 1 column.</p>
+
+        <div class="row">
+            
+            <div class="col-md-4 col-sm-12">
+                <div class="custom-box">
+                    <h3>Column 1</h3>
+                    <p>On desktop, I take up 1/3 of the space.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="custom-box">
+                    <h3>Column 2</h3>
+                    <p>On mobile, I stack below Column 1.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <div class="custom-box">
+                    <h3>Column 3</h3>
+                    <p>I am the third column in the grid.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
